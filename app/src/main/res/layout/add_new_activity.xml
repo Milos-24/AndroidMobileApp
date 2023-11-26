@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- floating_screen_layout.xml -->
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:nestedScrollingEnabled="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/headerTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_new_activity"
+        android:gravity="center"
+        android:padding="16dp"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+    android:layout_alignParentTop="true"/> <!-- Align to the top -->
+
+    <!-- Fields to enter text -->
+    <!-- Title, Description, Date, Time, and Button to upload images -->
+    <!-- You can use EditText, DatePicker, TimePicker, and a Button for image upload here -->
+
+    <!-- Title EditText -->
+    <EditText
+        android:id="@+id/titleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/title"
+        android:layout_below="@id/headerTextView"
+    android:layout_marginTop="16dp"/> <!-- Add margin from the top -->
+
+    <!-- Description EditText -->
+    <EditText
+        android:id="@+id/descriptionEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/description"
+        android:layout_below="@id/titleEditText"
+    android:layout_marginTop="16dp"/> <!-- Add margin from the top -->
+
+    <!-- DatePicker -->
+
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descriptionEditText"
+        android:layout_marginTop="16dp"
+      />
+
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/datePicker"
+    android:layout_marginTop="16dp"
+
+    />
+
+        <LinearLayout
+            android:layout_below="@id/timePicker"
+            android:id="@+id/linearType"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            tools:context=".MainActivity">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/select_the_type_of_activity"
+            android:scaleType="centerCrop"
+
+            >
+
+        </TextView>
+
+        <Spinner
+            android:id="@+id/categorySpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:scaleType="centerCrop"
+
+            />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_below="@id/linearType"
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            tools:context=".MainActivity">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+
+            android:scaleType="centerCrop"
+            android:layout_margin="8dp"
+
+            />
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+
+            android:scaleType="centerCrop"
+            android:layout_margin="8dp"
+
+            />
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+
+            android:scaleType="centerCrop"
+            android:layout_margin="8dp"
+
+            />
+        </LinearLayout>
+    <!-- Button to upload images -->
+    <Button
+        android:id="@+id/uploadImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/upload_images"
+        android:layout_below="@id/linear"
+
+        android:layout_marginTop="16dp" /><!-- Add margin from the top -->
+
+        <Button
+            android:id="@+id/setLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/set_location"
+            android:layout_below="@id/uploadImageButton"
+            android:layout_marginTop="16dp" />
+
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/savebtn"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/setLocation"
+         android:layout_marginTop="16dp"
+         android:layout_marginBottom="16dp"/>
+</RelativeLayout>
+</ScrollView>

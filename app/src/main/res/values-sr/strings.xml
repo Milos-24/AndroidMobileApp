@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Activity Planner</string>
+    <string name="action_settings">Podešavanja</string>
+    <string name="add_new_activity">Dodaj aktivnost</string>
+    <string name="Calendar">Kalendar</string>
+    <string name="save">Sačuvaj</string>
+    <string name="pick_a_place">Odaberi mjesto</string>
+    <string name="select_the_type_of_activity">Odaberi tip aktivnosti</string>
+    <string name="description">Opis</string>
+    <string name="title">Naslov</string>
+    <string name="set_location">Odaberi lokaciju</string>
+    <string name="upload_images">Dodaj slike</string>
+    <string name="savebtn">Sačuvaj</string>
+    <string name="search">Pretraži...</string>
+    <string name="_7_days">7 Dana</string>
+    <string name="_1_day">1 Dan</string>
+    <string name="_1_hour">1 Sat</string>
+    <string name="notifications">Obavještenja</string>
+    <string name="serbian">Srpski</string>
+    <string name="english">Engleski</string>
+    <string name="languages">Jezici</string>
+    <string name="settings">Podešavanja</string>
+</resources>
